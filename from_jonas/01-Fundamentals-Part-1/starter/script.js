@@ -249,33 +249,117 @@
 // Logical Operators 
 
 
-const hasDriversLicense = true;
-const hasGoodVision = false;
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodVision;
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
-if (!shouldDrive) {
-    console.log(`Sarah is able to drive!`);
+// if (!shouldDrive) {
+//     console.log(`Sarah is able to drive!`);
+// } else {
+//     console.log(`Someone should drive...`);
+// }
+
+// const isTired = true;
+
+// console.log(hasDriversLicense || hasGoodVision || isTired);
+
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log(`Sarah is able to drive!`);
+// } else {
+//     console.log(`Someone else should drive`);
+// }
+
+
+// SWITCH statement
+
+// const day = 'thursday';
+
+// switch (day) {
+//     case 'monday': // day === 'monday' 
+//         console.log('Plan course structure');
+//         console.log('Go to coding meet-up');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy weekend');
+//         break;
+//     default:
+//         console.log('Not a valid day.');
+// }
+
+// statement written as if else
+
+// if (day === 'monday') {
+//     console.log('Plan course structure');
+//     console.log('Go to coding meet-up');
+// } else if (day === 'tuesday') {
+//     console.log('Prepare theory videos');
+// } else if (day === 'wednesday' || day === 'thursday') {
+//     console.log('Write code examples');
+// } else if (day === 'friday') {
+//     console.log('Record videos');
+// } else if (day === 'saturday' || day === 'sunday') {
+//     console.log('Enjoy weekend');
+// } else {
+//     console.log('Not a valid input');
+// }
+
+
+// Statements and Expressions 
+
+// expression => piece of code that produces a value (ex: 3+4, 1991, true && false && !false); 
+
+//23 + 18
+//1991
+
+// statement => bigger piece of code that doesn't produce value by itself. (if else statement, switch); performs actions but doesn't produce value 
+
+// if (23 > 10) {
+//     const str = '23 is bigger';
+// }
+
+
+// Ternary Operator (Coditional Operator)
+
+
+const age = 23;
+
+
+// if age >= 10 execute this                      else execute this
+//age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink coffee ☕️');
+
+const drink = age >= 18 ? 'wine 🍷' : 'coffee ☕️';
+
+console.log('1', drink)
+
+let drink2;
+
+if (age >= 18) {
+    drink2 = 'wine 🍷';
 } else {
-    console.log(`Someone should drive...`);
+    drink2 = 'coffee ☕️';
 }
 
-const isTired = true;
+console.log(drink2);
 
-console.log(hasDriversLicense || hasGoodVision || isTired);
-
-console.log(hasDriversLicense && hasGoodVision && isTired);
-
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log(`Sarah is able to drive!`);
-} else {
-    console.log(`Someone else should drive`);
-}
-
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'coffee ☕️'}`);
 
 
 
