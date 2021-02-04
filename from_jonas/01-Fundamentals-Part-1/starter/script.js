@@ -117,6 +117,53 @@
 // console.log("Average Age With parenthesis // Correct: ", averageAge);
 
 
+// Strings and template literals
+
+// const firstName = "Alex";
+// const job = "programmer";
+// const birthYear = 1991;
+// const currentYear = 2021;
+// const alex = "I'm " + firstName + ", a" + job + (currentYear - birthYear) + " years old " + job + "!";
+
+// console.log(alex);
+
+// const alexNew = `I'm ${firstName}, a ${job} ${currentYear - birthYear} years old ${job}!`;// template literals
+
+// console.log("Template literals phrase: ", alexNew);
+
+// console.log(`This is a 
+// multiline phrase
+// with template 
+// literals`);
+
+// if // else 
+
+let age = 15;
+
+if (age >= 18) {
+    console.log(`Sarah can start driving 🚗`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is not old enough to drive a car 🚨. Wait another ${yearsLeft} years`)
+}
+
+const birthYear = 2202;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
+
+
+
+
+
+
+
 
 
 
