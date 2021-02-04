@@ -138,28 +138,113 @@
 
 // if // else 
 
-let age = 15;
+// let age = 15;
 
-if (age >= 18) {
-    console.log(`Sarah can start driving 🚗`);
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is not old enough to drive a car 🚨. Wait another ${yearsLeft} years`)
-}
+// if (age >= 18) {
+//     console.log(`Sarah can start driving 🚗`);
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is not old enough to drive a car 🚨. Wait another ${yearsLeft} years`)
+// }
 
-const birthYear = 2202;
-let century;
+// const birthYear = 2202;
+// let century;
 
-if (birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-}
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
 
-console.log(century);
+// console.log(century);
+
+// Type Conversion and Coercion ( Conversion = manually convert from one type to another )
+// Coercion = when JS converts from one type to another behind the scene 
+
+// type Conversion
+// const inputYear = `1991`;
+// console.log(inputYear + 18);
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number('Alex')); // => results in NaN (invalid number)
+// console.log(typeof NaN);
+
+// console.log(String(23), 23);
+
+// //  type Coercion
+
+// console.log('I am ' + 23 + ' years old'); // everytime there is a operation (+) between Number and string the number will be converted into a String
+
+// console.log('23' - '10' - 3); // the coercion is done the other way around from Strings to Numbers for these operations (- * /)
+
+// console.log('22' / 2); // => 11 
+
+// console.log('23' > '18'); // => true 
+
+// let n = '1' + 1; // => result is 11 (concatenated 1 with 1)
+// n = n - 1; // => 11 - 1 
+// console.log(n); // the result will be the number 10
+
+// console.log(2 + 3 + 4 + '5'); // => will result in 95. The numbers math is done first and then concats with 5
+
+// console.log('10' - '4' - '3' - 2 - '5'); // => results in 15. Converts 10,4,3 to numbers 10-4-3-2 = 1 and then concats with 5  
 
 
+// Truthy Flasy 
 
+
+// 5 falsy values: 0, '' , undefined, null, NaN => will be converted to false when converted to bol
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('test'));
+// console.log(Boolean({}));
+
+
+// const money = 10;
+
+// if (money) {
+//     console.log(`Don't spend it all`);
+// } else {
+//     console.log(`You should get a job`);
+// }
+
+// let height = 0;
+
+// if (height) {
+//     console.log(` YAY, Height is defined`);
+// } else {
+//     console.log(`Height IS NOT UNDEFINED`);
+// }
+
+//  Equal and Strictly equal operators ==  and ===
+
+// const age = '18';
+
+// if (age === 18) console.log('You just became an adult !');
+
+// if (age == 18) console.log(`You've just became an adult !`);
+
+
+// const favourite = prompt(`What's your favourite number?`);
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite == 23) {  // '23' == 23 (does type coercion)
+//     console.log(`Cool! 23 is an amazing number`);
+// }
+
+// if (Number(favourite) === 23) {
+//     console.log(`Strict equal with the number from prompt`);
+// }
+
+// const otherNo = Number(prompt(`What's your other favourite no. ?`));
+
+// if (otherNo !== 44) {
+//     console.log(`Number is not equal to 44`)
+// } else {
+//     console.log(`No is equal to 44`);
+// }
 
 
 
