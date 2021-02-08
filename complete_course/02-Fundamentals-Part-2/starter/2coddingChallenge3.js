@@ -1,4 +1,4 @@
-
+'use strict';
 const mark = {
     firstName: 'Mark',
     lastName: 'Miller',

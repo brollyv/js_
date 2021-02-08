@@ -1,3 +1,4 @@
+'use strict';
 // Objects
 
 const alex = {

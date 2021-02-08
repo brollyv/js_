@@ -1,3 +1,4 @@
+'use strict';
 // Loops in Loops
 
 for (let exercise = 1; exercise < 4; exercise++) {

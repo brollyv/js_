@@ -1,3 +1,4 @@
+'use strict';
 // Arrow functions
 
 // return happens implicitly only for one liner functions

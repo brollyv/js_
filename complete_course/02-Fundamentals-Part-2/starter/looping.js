@@ -1,4 +1,4 @@
-
+'use strict';
 const alexArray = ['Alex', 'Vieriu', 2037 - 1988, 'programmer', ['Michael', 'Peter', 'Steven'], true];
 
 // console.log(alexArray[0]);

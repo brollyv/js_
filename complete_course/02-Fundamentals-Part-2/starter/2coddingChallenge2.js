@@ -1,4 +1,4 @@
-
+'use strict';
 // const calctip = function (bill) {
 //     if (bill >= 50 && bill <= 300) {
 //         return bill * 0.15;
